@@ -1,0 +1,27 @@
+{
+  "name": "twitter-event-identification",
+  "version": "1.0.0",
+  "description": "Identify twitter's real world events in real-time",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikhr024/EventIdendificationInTwitter.git"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "Karthik Rangappa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthikhr024/EventIdendificationInTwitter/issues"
+  },
+  "homepage": "https://github.com/karthikhr024/EventIdendificationInTwitter#readme",
+  "dependencies": {
+    "dotenv":  "*",
+    "twitter":  "*"
+  }
+}
