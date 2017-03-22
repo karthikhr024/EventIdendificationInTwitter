@@ -8,9 +8,9 @@ var config = {
   access_token_secret:process.env.ACCESS_TOKEN_SECRET
 };
 
-var producer = new twitter(config);
+var client = new twitter(config);
 
-producer.stream('statuses/filter', {track:'javascript'}, function(stream){
+client.stream('statuses/filter', {track:'javascript'}, function(stream){
 
   stream.on('data', function(event){
     console.log(event && event.text);
@@ -20,5 +20,6 @@ producer.stream('statuses/filter', {track:'javascript'}, function(stream){
     console.log(error);
     throw error;
   });
+
 
 });
